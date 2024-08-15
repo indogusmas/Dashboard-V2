@@ -1,4 +1,5 @@
 import Header from '@/components/layout/header'
+import SideBar from '@/components/layout/sidebar'
 import React from 'react'
 
 export default function layout({
@@ -10,7 +11,7 @@ export default function layout({
     <>
       <Header/>
       <div className='flex h-screen overflow-hidden'>
-        <nav>Navigation</nav>
+        <SideBar/>
         <main className='flex-1 overflow-hidden pt-16'>{children}</main>
       </div>
     </>
